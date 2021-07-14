@@ -3,10 +3,10 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SalvadorCaps.API.Data.Repository;
-using SalvadorCaps.API.Model;
+using TracerIP.API.Data.Repository;
+using TracerIP.API.Model;
 
-namespace SalvadorCaps.API.Business
+namespace TracerIP.API.Business
 {
 	public class AcessIPBO
 	{

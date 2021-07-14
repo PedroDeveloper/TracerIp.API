@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SalvadorCaps.API.Data.Base
+namespace TracerIP.API.Data.Base
 {
     public static class Extensions
     {

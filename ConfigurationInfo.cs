@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalvadorCaps.API
+namespace TracerIP.API
 {
 	public static class ConfigurationInfo
 	{

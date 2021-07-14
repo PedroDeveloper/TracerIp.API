@@ -11,10 +11,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using SalvadorCaps.API.Business;
-using SalvadorCaps.API.Model;
+using TracerIP.API.Business;
+using TracerIP.API.Model;
 
-namespace SalvadorCaps.API.Controllers
+namespace TracerIP.API.Controllers
 {
 	[EnableCors("Policy1")]
 	[ApiController]

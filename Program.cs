@@ -13,7 +13,7 @@ using Serilog;
 using Serilog.Formatting.Compact;
 using Serilog.Formatting.Json;
 
-namespace SalvadorCaps.API
+namespace TracerIP.API
 {
 	public class Program
 	{

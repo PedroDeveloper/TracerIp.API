@@ -6,11 +6,11 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-using SalvadorCaps.API.Data.Base;
-using SalvadorCaps.API.Model;
+using TracerIP.API.Data.Base;
+using TracerIP.API.Model;
 
 
-namespace SalvadorCaps.API.Data.Repository
+namespace TracerIP.API.Data.Repository
 {
 	public class AcessIPRepository
 	{
@@ -42,6 +42,10 @@ namespace SalvadorCaps.API.Data.Repository
 
 					acessIP.ip = row.Field<string>("ip");
 					acessIP.dateAcess = row.Field<DateTime>("dateAcess");
+					acessIP.latitude = row.Field<string>("ip");
+					acessIP.longitude = row.Field<string>("longitude");
+					acessIP.city = row.Field<string>("city");
+					acessIP.region = row.Field<string>("region");
 
 
 					acessIPs.Add(acessIP);
@@ -100,16 +104,30 @@ namespace SalvadorCaps.API.Data.Repository
 											(
 												 ip
 												,dateAcess
+												,longitude
+												,latitude
+												,city
+												,region
+
 											)
 										
 										 VALUES
 											(
 												 @ip
 												,@dateAcess
+												,@longitude
+												,@latitude
+												,@city
+												,@region
 											)");
 
 				command.Parameters.AddWithValue("ip", acessIP.ip.AsDbValue());
 				command.Parameters.AddWithValue("dateAcess", DateTime.Now);
+				command.Parameters.AddWithValue("longitude", acessIP.longitude.AsDbValue());
+				command.Parameters.AddWithValue("latitude", acessIP.latitude.AsDbValue());
+				command.Parameters.AddWithValue("city", acessIP.city.AsDbValue());
+				command.Parameters.AddWithValue("region", acessIP.region.AsDbValue());
+
 				dataConnection.ExecuteNonQuery(command);
 
 			}

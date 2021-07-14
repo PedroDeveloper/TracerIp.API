@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SalvadorCaps.API.Model
+namespace TracerIP.API.Model
 {
 	public class AcessIPModelView
 	{
