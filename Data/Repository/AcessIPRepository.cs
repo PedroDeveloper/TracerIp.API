@@ -126,6 +126,7 @@ namespace TracerIP.API.Data.Repository
 				command.Parameters.AddWithValue("longitude", acessIP.longitude.AsDbValue());
 				command.Parameters.AddWithValue("latitude", acessIP.latitude.AsDbValue());
 				command.Parameters.AddWithValue("city", acessIP.city.AsDbValue());
+
 				command.Parameters.AddWithValue("region", acessIP.region.AsDbValue());
 
 				dataConnection.ExecuteNonQuery(command);
