@@ -42,7 +42,7 @@ namespace TracerIP.API.Data.Repository
 
 					acessIP.ip = row.Field<string>("ip");
 					acessIP.dateAcess = row.Field<DateTime>("dateAcess");
-					acessIP.latitude = row.Field<string>("ip");
+					acessIP.latitude = row.Field<string>("latitude");
 					acessIP.longitude = row.Field<string>("longitude");
 					acessIP.city = row.Field<string>("city");
 					acessIP.region = row.Field<string>("region");
